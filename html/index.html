@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/lib/slick.css">
+    <link rel="stylesheet" href="assets/lib/slick.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <title>Pack Tubos</title>
 </head>
 <body>
     <div class="loading">
-        <img src="/assets/img/logo.png" alt="Logo Pack Tubos">
+        <img src="assets/img/logo.png" alt="Logo Pack Tubos">
     </div>
     <header class="header">
         <div class="wrapper header__container">
             <a href="#">
                 <h1>Pack Tubos</h1>
-                <img class="header__logo" src="/assets/img/logo.png" alt="Pack Tubos">
+                <img class="header__logo" src="assets/img/logo.png" alt="Pack Tubos">
             </a>
             <div class="header__nav">
                 <a class="header__nav--active" href="#">Home</a>
@@ -31,17 +31,32 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main main__home">
         <section class="main__slider">
             <div class="main__slider-slides">
-
+                <img src="assets/img/slide-1.png" alt="Slide 1">
+                <img src="assets/img/slide-1.png" alt="Slide 1">
             </div>
-            <a href="#empresa">
-                <img src="/assets/img/down_arrow.svg" alt="Sessão 'A Empresa'">
+            <a class="main__link" href="#empresa">
+                <img src="assets/img/down_arrow.svg" alt="Sessão 'A Empresa'">
             </a>
         </section>
         <section id="empresa">
-
+            <div class="divisor divisor--big">
+                <h2>A EMPRESA</h2>
+            </div>
+            <div class="wrapper">
+                <article>
+                    <p>Há 19 anos nos especializamos na fabricação e comercialização de tubos de papelão espirais.
+                        A dedicação diária de nossos colaboradores nos permitiu conquistar a confiança dos clientes e parceiros em todo o Brasil.
+                        Contamos com profissionais que garantem alta qualidade dos produtos, alem de uma eficiente e arrojada infraestrutura.
+                    </p>
+                    <p>
+                        Temos como foco o atendimento e exigência dos clientes associados a constante preocupação com a qualidade (melhoria contínua).
+                        Dispomos de procedimentos muito rígidos, desde a recepção da matéria prima até a expedição do produto acabado.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -50,7 +65,7 @@
     </footer>
     
     <script src="assets/lib/jquery-3.5.1.min.js"></script>
-    <script src="assets/lib/slick.js"></script>
+    <script src="assets/lib/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

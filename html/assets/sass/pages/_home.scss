@@ -1,0 +1,19 @@
+.main {
+    &__slider {
+        position: relative;
+
+        &-slides {
+            img {
+                max-height: 86.5rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        left: 50%;
+        bottom: 6rem;
+        transform: translateX(-50%);
+    }
+}
