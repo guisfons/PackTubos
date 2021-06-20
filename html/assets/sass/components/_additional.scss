@@ -87,11 +87,25 @@
     margin-bottom: 5.3rem;
 
     h2 {
-        margin: 9.1rem 0;
+        margin: 9.1rem 0 10.1rem;
 
         &::after {
             left: 3rem;
             transform: none;
         } 
+    }
+}
+
+.main__visao-missao .divisor {
+    background-image: url('../img/visao.png');
+    margin-bottom: 10.9rem;
+
+    h2 {
+        margin: 6.8rem 0 9.2rem;
+
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

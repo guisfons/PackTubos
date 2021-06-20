@@ -2,6 +2,10 @@
     &__slider {
         position: relative;
 
+        &--no-slide {
+            display: flex;
+        }
+
         &-slides {
             img {
                 max-height: 86.5rem;
