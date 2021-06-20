@@ -100,6 +100,11 @@
     background-image: url('../img/visao.png');
     margin-bottom: 10.9rem;
 
+    &:nth-of-type(3) {
+        background-image: url('../img/missao.png');
+        margin-top: 10.9rem;
+    }
+
     h2 {
         margin: 6.8rem 0 9.2rem;
 
