@@ -82,29 +82,60 @@
     }
 }
 
-.main__home .divisor {
+.main {
+    &__home .divisor {
     background-image: url('../img/empresa.png');
     margin-bottom: 5.3rem;
 
-    h2 {
-        margin: 9.1rem 0 10.1rem;
+        h2 {
+            margin: 9.1rem 0 10.1rem;
 
-        &::after {
-            left: 3rem;
-            transform: none;
-        } 
+            &::after {
+                left: 3rem;
+                transform: none;
+            } 
+        }
+    }
+
+    &__visao-missao .divisor {
+        background-image: url('../img/visao.png');
+        margin-bottom: 10.9rem;
+    
+        &:nth-of-type(3) {
+            background-image: url('../img/missao.png');
+            margin-top: 10.9rem;
+        }
+    }
+
+    &__produtos {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10.9rem;
+        }
+        
+        .divisor {
+            background-image: url('../img/produtos-divisor.png');
+        }
+
+        &-img {
+            max-width: 55rem;
+            height: 71rem;
+            object-fit: cover;
+        }
+
+        article {
+            max-width: 55rem;
+            
+            p {
+                white-space: initial;
+            }
+        }
     }
 }
 
-.main__visao-missao .divisor {
-    background-image: url('../img/visao.png');
-    margin-bottom: 10.9rem;
 
-    &:nth-of-type(3) {
-        background-image: url('../img/missao.png');
-        margin-top: 10.9rem;
-    }
-
+.divisor {
     h2 {
         margin: 6.8rem 0 9.2rem;
 
