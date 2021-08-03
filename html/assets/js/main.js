@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('.loading').hide();
-
     const slider = function() {
         $('.main__slider-slides').slick({
             dots: false,

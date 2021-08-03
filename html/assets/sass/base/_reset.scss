@@ -8,6 +8,14 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @media(max-width: 1280px) {    
+        font-size: 50%;
+    }
+
+    @media(max-width: 1024px) {    
+        font-size: 40%;
+    }
 }
 body {
     box-sizing: border-box;
@@ -35,7 +43,7 @@ p {
     font-size: $text-size;
 }
 
-b {
+strong {
     font-size: inherit;
     font-weight: 700;
 }
@@ -43,6 +51,7 @@ b {
 ul {
     font-size: $text-size;
     list-style: none;
+    white-space: initial;
 }
 
 .wrapper {
@@ -50,3 +59,4 @@ ul {
     width: 100%;
     max-width: 128rem;
 }
+
