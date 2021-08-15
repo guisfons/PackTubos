@@ -9,11 +9,11 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 
-    @media(max-width: 1280px) {    
+    @include max(1280) {    
         font-size: 50%;
     }
 
-    @media(max-width: 1024px) {    
+    @include max(1024) {    
         font-size: 40%;
     }
 }
@@ -58,5 +58,9 @@ ul {
     margin: 0 auto;
     width: 100%;
     max-width: 128rem;
+
+    @include max(900) {
+        max-width: 90%;
+    }
 }
 

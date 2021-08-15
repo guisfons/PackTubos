@@ -34,5 +34,86 @@
             font-weight: bold;
             color: $green;
         }
+
+        @include max(900) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            z-index: 3;
+
+            background-color: #fff;
+            opacity: 0;
+            transition: .3s ease-in-out;
+
+            font-size: 3rem;
+        }
+
+        &--open {
+            width: 100%;
+            height: 100vh;
+            opacity: 1;
+
+            a {
+                margin: 1rem 0 !important;
+            }
+        }
+    }
+
+    &__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 4rem;
+        height: 3rem;
+    
+        span {
+            width: 100%;
+            height: 0.3rem;
+            background-color: $green;
+            border-radius: 0.4rem;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        
+        &::before {
+            content: '';
+            width: 3rem;
+            height: 1px;
+            background: $blue;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        
+        &::after {
+            content: '';
+            width: 3rem;
+            height: 1px;
+            background: $blue;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
     }
 }

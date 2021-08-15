@@ -25,6 +25,11 @@
         position: absolute;
         left: 50%;
         bottom: 6rem;
-        transform: translateX(-50%);
+        transform: translateX(-50%);        
+        max-width: 6rem;
+
+        @include max(900) {
+            display: none;
+        }
     }
 }
